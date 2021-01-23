@@ -1,12 +1,9 @@
 {
-  "name": "nodebb-plugin-category-queue",
-  "version": "1.0.7",
+  "name": "@ariastel/nodebb-plugin-category-queue",
+  "version": "1.0.0",
   "description": "A plugin for making post queue category specific",
   "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oplik0/nodebb-plugin-category-queue"
-  },
+  "repository": "git://github.com/ariastel/nodebb-plugin-category-queue.git",
   "keywords": [
     "nodebb",
     "plugin",
@@ -32,13 +29,16 @@
     "email": "opliko.reg+npm@protonmail.com",
     "url": "https://wieloswiat.pl"
   },
+  "contributors": [
+    "Ariastel Team <ariastel@iamantosik.me> (https://github.com/ariastel)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oplik0/nodebb-plugin-category-queue/issues"
+    "url": "https://github.com/ariastel/nodebb-plugin-category-queue/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {
-    "compatibility": "^1.11.0 || ^1.16.0"
+    "compatibility": "^1.16.x"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -48,5 +48,8 @@
     "eslint-plugin-import": "^2.15.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

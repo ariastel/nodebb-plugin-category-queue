@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-plugin-category-queue",
-	"url": "https://github.com/NodeBB/nodebb-plugin-category-queue",
+	"url": "https://github.com/ariastel/nodebb-plugin-category-queue",
 	"library": "./library.js",
 	"hooks": [
 		{
@@ -25,5 +25,6 @@
 	"acpScripts": [
 		"static/lib/admin.js"
 	],
-	"templates": "static/templates"
+	"templates": "static/templates",
+	"settingsRoute": "/admin/plugins/category-queue"
 }
