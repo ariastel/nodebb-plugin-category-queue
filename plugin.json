@@ -16,15 +16,12 @@
 			"method": "postQueue"
 		}
 	],
-	"staticDirs": {
-		"static": "./static"
-	},
 	"less": [
-		"static/style.less"
+		"styles/style.less"
 	],
 	"acpScripts": [
-		"static/lib/admin.js"
+		"lib/admin.js"
 	],
-	"templates": "static/templates",
+	"templates": "templates",
 	"settingsRoute": "/admin/plugins/category-queue"
 }
