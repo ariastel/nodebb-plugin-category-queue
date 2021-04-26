@@ -35,7 +35,9 @@ CategoryQueuePlugin.addAdminNavigation = async function (header) {
 };
 
 CategoryQueuePlugin.postQueue = async function (postData) {
-	if (Object.values(CategoryQueuePlugin.settings).includes(String(postData.data.cid))) {
+	const targetCid = Number(postData.data.cid);
+	const cids = Object.values(CategoryQueuePlugin.settings).map(Number).filter(Boolean);
+	if (targetCid && cids.includes(targetCid)) {
 		postData.shouldQueue = true;
 	}
 	return postData;
